@@ -1,0 +1,28 @@
+<acceptance-test-run title="The user fails to enter a term" name="The user fails to enter a term" steps="3" successful="1" failures="0" skipped="0" ignored="1" pending="1" annotated-result="PENDING" result="PENDING" duration="2440" timestamp="2015-12-16T11:49:23.821+01:00">
+  <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
+  <tags>
+    <tag name="Consult dictionary" type="feature"/>
+    <tag name="Consult dictionary/Lookup a definition" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2650f6692f6a04a601c01d9cb4591662.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1630">
+      <screenshots>
+        <screenshot image="2650f6692f6a04a601c01d9cb4591662.png"/>
+        <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+      </screenshots>
+      <description>Is the home page</description>
+    </test-step>
+  </test-group>
+  <test-step result="PENDING" duration="251">
+    <screenshots>
+      <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+    </screenshots>
+    <description>When they fail to enter a term</description>
+  </test-step>
+  <test-step result="IGNORED" duration="6">
+    <description>Then they should see the definition &apos;An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.&apos;</description>
+  </test-step>
+</acceptance-test-run>

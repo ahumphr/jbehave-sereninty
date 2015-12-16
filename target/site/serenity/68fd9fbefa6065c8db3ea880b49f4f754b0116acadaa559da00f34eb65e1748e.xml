@@ -1,0 +1,19 @@
+<acceptance-test-run title="Updating the definition of cumquat" name="Updating the definition of cumquat" steps="4" successful="0" failures="0" skipped="0" ignored="0" pending="4" annotated-result="PENDING" result="PENDING" duration="5" timestamp="2015-12-16T11:49:26.392+01:00">
+  <user-story id="UpdateADefinition" name="Update a definition" path="stories/update_definition/UpdateADefinition.story"/>
+  <tags>
+    <tag name="Update definition" type="feature"/>
+    <tag name="Update definition/Update a definition" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given the system contains a defintion of cumquat</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>When I log onto the system as admin to update cumquat</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>And I update the cumquat definition with todays date</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then the definition of cumquat should show last edit today.</description>
+  </test-step>
+</acceptance-test-run>

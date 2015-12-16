@@ -1,0 +1,63 @@
+<acceptance-test-run title="Looking up the definition of &apos;peach&apos;" name="Looking up the definition of &apos;peach&apos;" steps="4" successful="3" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="6852" timestamp="2015-12-16T11:49:16.965+01:00">
+  <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
+  <tags>
+    <tag name="Consult dictionary" type="feature"/>
+    <tag name="Consult dictionary/Lookup a definition" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="35f47595fde6fc3ee60f2c02370edfc7.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1488">
+      <screenshots>
+        <screenshot image="35f47595fde6fc3ee60f2c02370edfc7.png"/>
+        <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+      </screenshots>
+      <description>Is the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user looks up the definition of the word &apos;peach&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+    </screenshots>
+    <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;peach&lt;/span&gt;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="670">
+        <screenshots>
+          <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+          <screenshot image="20d4e63e4ab4fc0c441c26ed957efe88.png"/>
+        </screenshots>
+        <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;peach&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1961">
+        <screenshots>
+          <screenshot image="523c0c39b593782866a98ec28698b3d6.png"/>
+          <screenshot image="2650f6692f6a04a601c01d9cb4591662.png"/>
+        </screenshots>
+        <description>Starts search</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="Then they should see the definition &apos;An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.&apos;" result="FAILURE">
+    <screenshots>
+      <screenshot image="2650f6692f6a04a601c01d9cb4591662.png"/>
+    </screenshots>
+    <test-step result="FAILURE" duration="762">
+      <screenshots>
+        <screenshot image="2650f6692f6a04a601c01d9cb4591662.png"/>
+      </screenshots>
+      <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.&lt;/span&gt;</description>
+      <error>java.lang.AssertionError: 
+Expected: a collection containing a string containing &quot;An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.&quot;
+     but: was &quot;A tree (Prunus persica), native to China and now widely cultivated throughout temperate regions, having pink flowers and edible fruit.&quot;, was &quot;The soft juicy stone fruit of the peach tree, having yellow flesh, downy, red-tinted yellow skin, and a deeply sculptured pit or stone containing a single seed.  [quotations ▼]&quot;, was &quot;&quot;, was &quot;A light moderate to strong yellowish pink to light orange color.
+peach colour:    &quot;, was &quot;(informal) A particularly admirable or pleasing person or thing.  [quotations ▼]&quot;, was &quot;&quot;, was &quot;The large, edible berry of the Sarcocephalus esculentus, a rubiaceous climbing shrub of west tropical Africa.&quot;</error>
+      <exception>java.lang.AssertionError:
+Expected: a collection containing a string containing &quot;An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.&quot;
+     but: was &quot;A tree (Prunus persica), native to China and now widely cultivated throughout temperate regions, having pink flowers and edible fruit.&quot;, was &quot;The soft juicy stone fruit of the peach tree, having yellow flesh, downy, red-tinted yellow skin, and a deeply sculptured pit or stone containing a single seed.  [quotations ▼]&quot;, was &quot;&quot;, was &quot;A light moderate to strong yellowish pink to light orange color.
+peach colour:    &quot;, was &quot;(informal) A particularly admirable or pleasing person or thing.  [quotations ▼]&quot;, was &quot;&quot;, was &quot;The large, edible berry of the Sarcocephalus esculentus, a rubiaceous climbing shrub of west tropical Africa.&quot;
+[org.agenturbell.steps.serenity.EndUserSteps.should_see_definition(EndUserSteps.java:27), org.agenturbell.steps.DefinitionSteps.thenTheyShouldSeeADefinitionContainingTheWords(DefinitionSteps.java:27)]</exception>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

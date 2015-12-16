@@ -1,0 +1,5 @@
+org/agenturbell/AcceptanceTestSuite.class
+org/agenturbell/steps/serenity/EndUserSteps.class
+org/agenturbell/steps/DefinitionSteps.class
+org/agenturbell/pages/DictionaryPage$1.class
+org/agenturbell/pages/DictionaryPage.class

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Lookup a definition","Looking up the definition of 'apple'","SUCCESS","2015-12-16T11:48:56.060+01:00","0.0","13.75"
+"Lookup a definition","Looking up the definition of 'peach'","FAILURE","2015-12-16T11:49:16.965+01:00","0.0","6.85"
+"Lookup a definition","Looking up the definition of 'pear'","SUCCESS","2015-12-16T11:49:09.843+01:00","0.0","7.12"
+"Lookup a definition","The user fails to enter a term","PENDING","2015-12-16T11:49:23.821+01:00","0.0","2.44"

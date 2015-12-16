@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: org.agenturbell.AcceptanceTestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 3, Errors: 0, Skipped: 6, Time elapsed: 32.494 sec <<< FAILURE! - in org.agenturbell.AcceptanceTestSuite
+Then they should see the definition 'An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem.'(org.agenturbell.steps.DefinitionSteps)  Time elapsed: 0.772 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a collection containing a string containing "An edible fruit produced by the peach tree, similar to an apple but elongated towards the stem."
+     but: was "A tree (Prunus persica), native to China and now widely cultivated throughout temperate regions, having pink flowers and edible fruit.", was "The soft juicy stone fruit of the peach tree, having yellow flesh, downy, red-tinted yellow skin, and a deeply sculptured pit or stone containing a single seed.  [quotations ▼]", was "", was "A light moderate to strong yellowish pink to light orange color.
+peach colour:    ", was "(informal) A particularly admirable or pleasing person or thing.  [quotations ▼]", was "", was "The large, edible berry of the Sarcocephalus esculentus, a rubiaceous climbing shrub of west tropical Africa."
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at org.agenturbell.steps.serenity.EndUserSteps.should_see_definition(EndUserSteps.java:27)
+	at org.agenturbell.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$e775cca6.CGLIB$should_see_definition$3(<generated>)
+	at org.agenturbell.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$e775cca6$$FastClassByCGLIB$$1e33059b.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:339)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:324)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:299)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:129)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:56)
+	at org.agenturbell.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$e775cca6.should_see_definition(<generated>)
+	at org.agenturbell.steps.DefinitionSteps.thenTheyShouldSeeADefinitionContainingTheWords(DefinitionSteps.java:27)
+
+Scenario: Looking up the definition of 'peach'  Time elapsed: 0.785 sec  <<< FAILURE!
+java.lang.AssertionError: scenario failed!
+	at de.codecentric.jbehave.junit.monitoring.JUnitScenarioReporter.afterScenario(JUnitScenarioReporter.java:218)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterScenario(DelegatingStoryReporter.java:43)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterScenario(ConcurrentStoryReporter.java:175)
+	at org.jbehave.core.embedder.StoryRunner.runCancellable(StoryRunner.java:347)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:239)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:182)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:233)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+LookupADefinition.story  Time elapsed: 2.282 sec  <<< FAILURE!
+java.lang.AssertionError: story failed!
+	at de.codecentric.jbehave.junit.monitoring.JUnitScenarioReporter.afterStory(JUnitScenarioReporter.java:143)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterStory(DelegatingStoryReporter.java:49)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterStory(ConcurrentStoryReporter.java:121)
+	at org.jbehave.core.embedder.StoryRunner.runCancellable(StoryRunner.java:355)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:239)
+	at org.jbehave.core.embedder.StoryRunner.run(StoryRunner.java:182)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:233)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+

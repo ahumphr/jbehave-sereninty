@@ -1,0 +1,7 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Dec 16 11:49:26 CET 2015
+stories/update_definition/UpdateADefinition.story=0
+threads=1
+total=30000
+threadAverage=30000
+stories/consult_dictionary/LookupADefinition.story=30000

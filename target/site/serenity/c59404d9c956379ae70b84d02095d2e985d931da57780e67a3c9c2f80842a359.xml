@@ -1,0 +1,52 @@
+<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13751" timestamp="2015-12-16T11:48:56.060+01:00">
+  <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
+  <tags>
+    <tag name="Consult dictionary" type="feature"/>
+    <tag name="Consult dictionary/Lookup a definition" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6239">
+      <screenshots>
+        <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+      </screenshots>
+      <description>Is the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user looks up the definition of the word &apos;apple&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+    </screenshots>
+    <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0194483fd450443e300fba3860e2cda1.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="795">
+        <screenshots>
+          <screenshot image="11a60f6bdc7c244da46b9d7b9a4551a6.png"/>
+        </screenshots>
+        <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2382">
+        <screenshots>
+          <screenshot image="d0cccbcfcc2ea41ab7f280c6aae1cb7b.png"/>
+          <screenshot image="f46f345da5568fd3530fe39096652c62.png"/>
+        </screenshots>
+        <description>Starts search</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="f46f345da5568fd3530fe39096652c62.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1272">
+      <screenshots>
+        <screenshot image="f46f345da5568fd3530fe39096652c62.png"/>
+      </screenshots>
+      <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

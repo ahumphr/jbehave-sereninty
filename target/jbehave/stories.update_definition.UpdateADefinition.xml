@@ -1,0 +1,32 @@
+<story path="stories/update_definition/UpdateADefinition.story" title="">
+<scenario keyword="Scenario:" title="Updating the definition of cumquat">
+<step outcome="pending" keyword="PENDING">Given the system contains a defintion of cumquat</step>
+<step outcome="pending" keyword="PENDING">When I log onto the system as admin to update cumquat</step>
+<step outcome="pending" keyword="PENDING">And I update the cumquat definition with todays date</step>
+<step outcome="pending" keyword="PENDING">Then the definition of cumquat should show last edit today.</step>
+<pendingMethod>@Given(&quot;the system contains a defintion of cumquat&quot;)
+@Pending
+public void givenTheSystemContainsADefintionOfCumquat() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;I log onto the system as admin to update cumquat&quot;)
+@Pending
+public void whenILogOntoTheSystemAsAdminToUpdateCumquat() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;I update the cumquat definition with todays date&quot;)
+@Pending
+public void whenIUpdateTheCumquatDefinitionWithTodaysDate() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;the definition of cumquat should show last edit today.&quot;)
+@Pending
+public void thenTheDefinitionOfCumquatShouldShowLastEditToday() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>
